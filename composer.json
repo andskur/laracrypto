@@ -1,6 +1,6 @@
 {
     "name": "andskur/larachain",
-    "description": "Laravel cryptocurrency integration",,
+    "description": "Laravel cryptocurrency integration",
     "keywords": ["laravel", "cryptocurrency", "bitcoin", "blockchain"],
     "homepage": "https://github.com/andskur/larachain",
     "license": "MIT",
