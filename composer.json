@@ -1,0 +1,13 @@
+{
+    "name": "andskur/larachain",
+    "description": "Laravel cryptocurrencies integration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "anskur",
+            "email": "a.skurlatov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
