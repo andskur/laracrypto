@@ -1,6 +1,6 @@
 <?php
 
-namespace Andskur\Larachain;
+namespace Andskur\Laracrypto;
 
 class BlockchainContainer
 {
@@ -15,9 +15,9 @@ class BlockchainContainer
      */
     public function __construct()
     {
-        $this->guid = config('larachain.blockchain.guid');
-        $this->api = config('larachain.blockchain.api');
-        $this->pass = "?password=" . config('larachain.blockchain.pass');
+        $this->guid = config('laracrypto.blockchain.guid');
+        $this->api = config('laracrypto.blockchain.api');
+        $this->pass = "?password=" . config('laracrypto.blockchain.pass');
         $this->url = $this->url . $this->guid;
     }
 

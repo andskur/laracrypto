@@ -1,8 +1,8 @@
 {
-    "name": "andskur/larachain",
+    "name": "andskur/laracrypto",
     "description": "Laravel cryptocurrency integration",
     "keywords": ["laravel", "cryptocurrency", "bitcoin", "blockchain"],
-    "homepage": "https://github.com/andskur/larachain",
+    "homepage": "https://github.com/andskur/laracrypto",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Andskur\\Larachain\\": "src/"
+            "Andskur\\Laracrypto\\": "src/"
         }
     },
     "minimum-stability": "dev"

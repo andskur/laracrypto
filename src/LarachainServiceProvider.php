@@ -1,9 +1,9 @@
 <?php
 
-namespace Andskur\Larachain;
+namespace Andskur\Laracrypto;
 
 use Illuminate\Support\ServiceProvider;
-use Andskur\Larachain\BlockchainContainer as Blockchain;
+use Andskur\Laracrypto\BlockchainContainer as Blockchain;
 
 class LarachainServiceProvider extends ServiceProvider
 {
@@ -15,7 +15,7 @@ class LarachainServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/larachain.php' => config_path('larachain.php'),
+            __DIR__.'/config/laracrypto.php' => config_path('laracrypto.php'),
         ]);
     }
 

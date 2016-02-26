@@ -1,6 +1,6 @@
 <?php
 
-namespace Andskur\Larachain;
+namespace Andskur\Laracrypto;
 
 use Illuminate\Support\Facades\Facade;
 
