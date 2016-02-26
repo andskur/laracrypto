@@ -1,13 +1,24 @@
 {
     "name": "andskur/larachain",
-    "description": "Laravel cryptocurrencies integration",
+    "description": "Laravel cryptocurrency integration",,
+    "keywords": ["laravel", "cryptocurrency", "bitcoin", "blockchain"],
+    "homepage": "https://github.com/andskur/larachain",
     "license": "MIT",
     "authors": [
         {
-            "name": "anskur",
-            "email": "a.skurlatov@gmail.com"
+            "name": "Andskur",
+            "email": "a.skurlatov@gmail.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andskur\\Larachain\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }
