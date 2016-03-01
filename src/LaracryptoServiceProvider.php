@@ -5,7 +5,7 @@ namespace Andskur\Laracrypto;
 use Illuminate\Support\ServiceProvider;
 use Andskur\Laracrypto\BlockchainContainer as Blockchain;
 
-class LarachainServiceProvider extends ServiceProvider
+class LaracryptoServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
