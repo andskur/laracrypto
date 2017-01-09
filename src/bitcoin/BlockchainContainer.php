@@ -146,4 +146,26 @@ class BlockchainContainer
         return $results;
 
     }
+
+    /**
+     * Send many payments
+     * @param $recipients
+     * @param $from_address
+     * @param null $fee
+     * @return mixed
+     */
+    public function sendMany($recipients, $from_address, $fee = null)
+    {
+        $this->login();
+        $data = array(
+            'recipients' => $recipients,
+            'from' => $from_address,
+            'fee' => $fee,
+        );
+        $param = http_build_query($data);
+        $endpoint = '/sendmany'.$this->pass.'&'.$param;
+        $results = $this->getJson($endpoint);
+
+        return $results;
+    }
 }
