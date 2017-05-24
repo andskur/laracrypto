@@ -36,21 +36,11 @@ class BlockchainContainer
     }
 
     /**
-     * Login to Blockchain server
-     */
-    private function login()
-    {
-        $endpoint = "/login" . $this->pass . "&api_code=" . $this->api;
-        $results = $this->getJson($endpoint);
-    }
-
-    /**
      * Check Full Balance
      * @return mixed
      */
     public function balance()
     {
-        $this->login();
         $endpoint = '/balance' . $this->pass;
         $results = $this->getJson($endpoint);
 
@@ -63,7 +53,6 @@ class BlockchainContainer
      */
     public function addresses()
     {
-        $this->login();
         $endpoint = '/list' . $this->pass;
         $results = $this->getJson($endpoint);
 
@@ -77,7 +66,6 @@ class BlockchainContainer
      */
     public function addressBalance($address)
     {
-        $this->login();
         $endpoint = '/address_balance'.$this->pass.'&address='.$address;
         $results = $this->getJson($endpoint);
 
@@ -91,7 +79,6 @@ class BlockchainContainer
      */
     public function newAddress($label)
     {
-        $this->login();
         $endpoint ='/new_address'.$this->pass.'&label='.$label;
         $results = $this->getJson($endpoint);
 
@@ -104,7 +91,6 @@ class BlockchainContainer
      */
     public function archiveAddress($address)
     {
-        $this->login();
         $endpoint = '/archive_address'.$this->pass.'&address='.$address;
         $results = $this->getJson($endpoint);
     }
@@ -115,7 +101,6 @@ class BlockchainContainer
      */
     public function unarchiveAddress($address)
     {
-        $this->login();
         $endpoint = '/unarchive_address'.$this->pass.'&address='.$address;
         $results = $this->getJson($endpoint);
     }
@@ -131,7 +116,6 @@ class BlockchainContainer
      */
     public function send($to_address, $amount, $from_address, $fee = null, $public_note = null)
     {
-        $this->login();
         $data = array(
             'to'=>$to_address,
             'from'=>$from_address,
@@ -145,5 +129,26 @@ class BlockchainContainer
 
         return $results;
 
+    }
+
+    /**
+     * Send many payments
+     * @param $recipients
+     * @param $from_address
+     * @param null $fee
+     * @return mixed
+     */
+    public function sendMany($recipients, $from_address, $fee = null)
+    {
+        $data = array(
+            'recipients' => $recipients,
+            'from' => $from_address,
+            'fee' => $fee,
+        );
+        $param = http_build_query($data);
+        $endpoint = '/sendmany'.$this->pass.'&'.$param;
+        $results = $this->getJson($endpoint);
+
+        return $results;
     }
 }
