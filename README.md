@@ -12,12 +12,12 @@ First you'll need to set up your configuration using your `.env` file.
 
 The available items are as follows:
 
-Item             | Description
----------------- | --------------
-BLOCKCHAIN_GUID  | The GUID of your wallet.
-BLOCKCHAIN_PASS  | The password for accessing your local API.
-BLOCKCHAIN_API   | _Deprecated_
-BLOCKCHAIN_PASS2 | _Deprecated_
+Item               | Description
+------------------ | --------------
+`BLOCKCHAIN_GUID`  | The GUID of your wallet.
+`BLOCKCHAIN_PASS`  | The password for accessing your local API.
+`BLOCKCHAIN_API`   | _Deprecated_
+`BLOCKCHAIN_PASS2` | _Deprecated_
 
 ### Currencies
 
