@@ -21,5 +21,12 @@
             "Andskur\\Laracrypto\\": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Andskur\\Laracrypto\\LaracryptoServiceProvider"
+            ]
+        }
+    }
 }
