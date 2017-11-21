@@ -5,7 +5,7 @@ namespace Andskur\Laracrypto\Ethereum;
 use GuzzleHttp\Client;
 
 /**
- * Class EthereumContainer
+ * Class EthereumContainer.
  */
 class EthereumContainer
 {
@@ -29,9 +29,11 @@ class EthereumContainer
 
     /**
      * Retrieve the JSON response from the RPC client.
+     *
      * @param string $method
      * @param array  $params
-     * @return mixed json response
+     *
+     * @return mixed
      */
     private function getJson($method, $params)
     {
@@ -56,6 +58,7 @@ class EthereumContainer
 
     /**
      * List of all wallet addresses.
+     *
      * @return mixed
      */
     public function addresses()
@@ -70,8 +73,10 @@ class EthereumContainer
 
     /**
      * Check a single address' balance.
+     *
      * @param string $address
      * @param string $tag
+     *
      * @return mixed
      */
     public function addressBalance($address, $tag = 'latest')
@@ -89,7 +94,9 @@ class EthereumContainer
 
     /**
      * Generate a new address.
+     *
      * @param string $passphrase
+     *
      * @return mixed
      */
     public function newAddress($passphrase)
@@ -106,7 +113,9 @@ class EthereumContainer
 
     /**
      * Lock address.
+     *
      * @param string $address
+     *
      * @return mixed
      */
     public function lockAddress($address)
@@ -123,9 +132,11 @@ class EthereumContainer
 
     /**
      * Unlock address.
+     *
      * @param string $address
      * @param string $passphrase
      * @param int    $duration
+     *
      * @return mixed
      */
     public function unlockAddress($address, $passphrase, $duration = 300)
@@ -144,12 +155,14 @@ class EthereumContainer
 
     /**
      * Send payment.
+     *
      * @param string      $to_address
      * @param string|null $value
      * @param string      $from_address
      * @param string|null $gas
      * @param string|null $gasPrice
      * @param string|null $data
+     *
      * @return mixed
      */
     public function send(

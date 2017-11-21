@@ -5,7 +5,7 @@ namespace Andskur\Laracrypto\Ethereum;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class EthereumFacade
+ * Class EthereumFacade.
  */
 class EthereumFacade extends Facade
 {
