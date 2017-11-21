@@ -7,7 +7,7 @@ return [
         'pass2' => env('BLOCKCHAIN_PASS2'),
     ],
     'ethereum'   => [
-        'url' => env('ETHEREUM_URL', 'http://localhost'),
-        'port'  => env('ETHEREUM_PORT', 8545),
+        'url'  => env('ETHEREUM_URL', 'http://localhost'),
+        'port' => env('ETHEREUM_PORT', 8545),
     ],
 ];
