@@ -4,6 +4,7 @@ namespace Andskur\Laracrypto;
 
 use Illuminate\Support\ServiceProvider;
 use Andskur\Laracrypto\Bitcoin\BlockchainContainer as Blockchain;
+use Andskur\Laracrypto\Ethereum\EthereumContainer as Ethereum;
 
 class LaracryptoServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,9 @@ class LaracryptoServiceProvider extends ServiceProvider
     {
         $this->app->bind('blockchain', function () {
             return new Blockchain;
+        });
+        $this->app->bind('ethereum', function () {
+            return new Ethereum;
         });
     }
 }
