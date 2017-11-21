@@ -19,7 +19,7 @@ class EthereumContainer
     private $url;
 
     /**
-     * Construct Blockchain access from config file.
+     * Construct Ethereum RPC access from config file.
      */
     public function __construct()
     {
