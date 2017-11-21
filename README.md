@@ -26,7 +26,11 @@ $ composer require andskur/laracrypto
 
 First you'll need to set up your configuration using your `.env` file.
 
-The available items are as follows:
+**Bitcoin**
+
+The Bitcoin interface utilises the [Blockchain Wallet API].
+
+This will need to be running using the port specified in your laracrypto config.
 
 Item               | Description
 ------------------ | --------------
@@ -35,13 +39,16 @@ Item               | Description
 `BLOCKCHAIN_API`   | _Deprecated_
 `BLOCKCHAIN_PASS2` | _Deprecated_
 
-### Currencies
+**Ethereum**
 
-**Bitcoin**
-
-The Bitcoin interface utilises the [Blockchain Wallet API].
+The Ethereum interface utilises the [Ethereum JSON-RPC API].
 
 This will need to be running using the port specified in your laracrypto config.
+
+Item               | Description
+------------------ | --------------
+`ETHEREUM_URI`     | The base URI that the RPC is running on.
+`ETHEREUM_PORT`    | The port that the RPC is running on.
 
 ## Change log
 
@@ -63,6 +70,7 @@ $ composer test
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [Blockchain Wallet API]: https://github.com/blockchain/service-my-wallet-v3
+[Ethereum JSON-RPC API]: https://github.com/ethereum/wiki/wiki/JSON-RPC
 
 [ico-version]: https://img.shields.io/packagist/v/andskur/laracrypto.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square

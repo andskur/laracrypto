@@ -16,7 +16,7 @@ class EthereumContainer
     /**
      * @var string
      */
-    private $url;
+    private $uri;
 
     /**
      * Construct Ethereum RPC access from config file.
@@ -24,7 +24,7 @@ class EthereumContainer
     public function __construct()
     {
         $this->port = config('laracrypto.ethereum.port');
-        $this->url = config('laracrypto.ethereum.url').':'.$this->port;
+        $this->uri = config('laracrypto.ethereum.uri').':'.$this->port;
     }
 
     /**
@@ -38,11 +38,11 @@ class EthereumContainer
     private function getJson($method, $params)
     {
         $client = new Client([
-            'base_uri' => $this->url,
+            'base_uri' => $this->uri,
         ]);
 
         $data = $client->post(
-            $this->url,
+            '',
             [
                 'jsonrpc' => 2.0,
                 'method'  => $method,
