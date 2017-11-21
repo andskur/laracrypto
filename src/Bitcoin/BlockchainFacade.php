@@ -1,6 +1,6 @@
 <?php
 
-namespace Andskur\Laracrypto\bitcoin;
+namespace Andskur\Laracrypto\Bitcoin;
 
 use Illuminate\Support\Facades\Facade;
 

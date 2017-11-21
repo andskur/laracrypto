@@ -3,7 +3,7 @@
 namespace Andskur\Laracrypto;
 
 use Illuminate\Support\ServiceProvider;
-use Andskur\Laracrypto\bitcoin\BlockchainContainer as Blockchain;
+use Andskur\Laracrypto\Bitcoin\BlockchainContainer as Blockchain;
 
 class LaracryptoServiceProvider extends ServiceProvider
 {
