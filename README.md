@@ -1,7 +1,7 @@
 # laracrypto
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
+[![Software License][ico-license]](LICENSE)
 [![Total Downloads][ico-downloads]][link-downloads]
 
 Add integration between Laravel and cryptocurrency services.
