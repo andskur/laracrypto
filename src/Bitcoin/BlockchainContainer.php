@@ -47,7 +47,6 @@ class BlockchainContainer
         $json_feed = json_decode($json_data);
 
         return $json_feed;
-
     }
 
     /**
@@ -153,7 +152,6 @@ class BlockchainContainer
         $results = $this->getJson($endpoint);
 
         return $results;
-
     }
 
     /**
