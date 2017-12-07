@@ -67,7 +67,7 @@ $ composer test
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
 
 [Blockchain Wallet API]: https://github.com/blockchain/service-my-wallet-v3
 [Ethereum JSON-RPC API]: https://github.com/ethereum/wiki/wiki/JSON-RPC
