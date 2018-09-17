@@ -23,8 +23,8 @@ class EthereumContainer
      */
     public function __construct()
     {
-        $this->port = config('laracrypto.ethereum.port');
-        $this->uri = config('laracrypto.ethereum.uri').':'.$this->port;
+        $this->port = '8545';
+        $this->uri = 'http://localhost:8545';
     }
 
     /**
